@@ -11,7 +11,7 @@ dsl {
 """
   }
   body {
-     raw { +"\"Some raw input here\"" }
+     raw { +""""Some raw input here"""" }
      result{+"Standard, Details, History"}
      nodes {
         entity {name="SettProfTable"; id="SettProfiles";}
