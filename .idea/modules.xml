@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HolyDSL.iml" filepath="$PROJECT_DIR$/.idea/HolyDSL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HolyDSL.iml" filepath="$PROJECT_DIR$/.idea/modules/HolyDSL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HolyDSL_main.iml" filepath="$PROJECT_DIR$/.idea/modules/HolyDSL_main.iml" group="HolyDSL" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HolyDSL_test.iml" filepath="$PROJECT_DIR$/.idea/modules/HolyDSL_test.iml" group="HolyDSL" />
     </modules>
   </component>
 </project>
