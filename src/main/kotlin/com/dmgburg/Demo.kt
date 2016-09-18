@@ -19,6 +19,7 @@ dsl {
            name="ClientSettProfTable"
            id="ClientSettProfiles"
            fields{
+               raw { +""""Some raw input even here"""" }
                field{name="RecordID"; expression="RecordID"}
                field{name="OrdCorrId"; expression="objectToLong(OrdCorrId)"}
            }
