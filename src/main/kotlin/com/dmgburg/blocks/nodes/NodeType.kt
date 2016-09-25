@@ -6,5 +6,7 @@ package com.dmgburg.blocks.nodes
 
 
 enum class NodeType(val typeName: String){
-    ENTITY("entity")
+    ENTITY("entity"),
+    FILTER("filter"),
+    CALCCOL("calccol")
 }

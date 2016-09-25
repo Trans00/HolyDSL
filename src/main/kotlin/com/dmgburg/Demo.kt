@@ -23,7 +23,20 @@ dsl {
                field{name="RecordID"; expression="RecordID"}
                field{name="OrdCorrId"; expression="objectToLong(OrdCorrId)"}
            }
-       }
+        }
+        filter {
+            id = "StandardSpOrdHistory";
+            inputRef = "RawOrdHistory";
+            condition = "and(SenderCompId == \"\${ord.blott.taps.comp-i})\", #StandSpOrd(\"Product\",\"Type\"))"
+        }
+        calccol {
+            id = "All StandSpOrd"
+            inputRef = "FilteredStandSpOrd"
+            fields {
+                field { name = "WorkingAmount"; expression = "longToDouble(WorkingAmount, WorkingAmountScale)" }
+                field { name = "FilledAmount"; expression = "longToDouble(FilledAmount, FilledAmountScale)" }
+            }
+        }
      }
   }
 }
